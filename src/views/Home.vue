@@ -1,12 +1,11 @@
 <template>
-  <div :style="{backgroundColor:'#000'}">
-    <v-container >
+  <div class="MainDiv" :style="{backgroundImage:'url(assets/Starter.jpg)'}">
+    <v-container>
       <v-row class="text-center" >
-        <v-col cols="12">
+        <v-col cols="12" class="Content">
           <div>
             <router-link to="Login"><LoginButton class="login"></LoginButton></router-link>
-          
-          <CadastroButton class="cadastro"></CadastroButton>
+            <router-link to="Cadastro"><CadastroButton class="cadastro"></CadastroButton></router-link>
           </div>
           <div>
           <Carrousel></Carrousel>
@@ -21,9 +20,19 @@
   .cadastro {
     margin-top: 10px;
   }
-  .background {
-    background-image: url('/src/assets/Starter.jpg');
+  .MainDiv {  
     background-size: cover;
+    height: 716px;
+  }
+  .Content{
+    display: flex;
+    flex-direction: column;
+  }
+  .login{
+    color: #FFF;
+  }
+  .cadastro {
+    color: #FFF;
   }
 </style>
 

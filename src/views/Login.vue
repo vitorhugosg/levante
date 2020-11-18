@@ -8,7 +8,7 @@
             <MainInput placeholder="Email"></MainInput>
             <MainInput placeholder="Senha"></MainInput>
           </div>
-          
+          <SendButton></SendButton>
       </v-col>
      </v-row>
     </v-container >
@@ -17,11 +17,13 @@
 
 <script>
 import MainInput from '../components/MainInput'
+import SendButton from '../components/SendButton'
 
 export default {
   name: 'Login',
   components: {
-    MainInput
+    MainInput,
+    SendButton
   }
 }
 </script>

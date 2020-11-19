@@ -1,17 +1,16 @@
-
 <template>
-  <div class="Cadastro">
+  <div class="MainDiv" :style="{backgroundImage:'url(assets/fundo-login.jpg)'}">
     <v-container >
       <v-row class="text-center" >
-        <v-col cols="12">
-          <h1>Cadastro</h1>
+        <v-col cols="12 d-flex flex-column justify-content-around Content">
+            <h1 class="mb-5 text-white">Cadastro</h1>
           <div>
-            <MainInput placeholder="Email"></MainInput>
-            <MainInput placeholder="Nome Completo"></MainInput>
-            <MainInput placeholder="Senha"></MainInput>
-            <MainInput placeholder="Confirme sua senha"></MainInput>
-          </div>
+            <MainInput placeholder="Email" class="mb-3"></MainInput>
+            <MainInput placeholder="Nome Completo" class="mb-3"></MainInput>
+            <MainInput placeholder="Senha " class="mb-3"></MainInput>
+            <MainInput placeholder="Confirme sua senha" class="mb-3"></MainInput>
           <SendButton></SendButton>
+          </div>
       </v-col>
      </v-row>
     </v-container >

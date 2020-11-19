@@ -4,11 +4,11 @@
       <v-row class="text-center" >
         <v-col cols="12" class="Content">
           <div>
-            <router-link to="Login"><LoginButton class="login"></LoginButton></router-link>
-            <router-link to="Cadastro"><CadastroButton class="cadastro"></CadastroButton></router-link>
+            <router-link to="Login"><LoginButton class="login mt-5"></LoginButton></router-link>
+            <router-link to="Cadastro"><CadastroButton class="mt-3 login"></CadastroButton></router-link>
           </div>
           <div>
-          <Carrousel></Carrousel>
+          <Carrousel class="pb-5"></Carrousel>
           </div>
         </v-col>
       </v-row>
@@ -17,21 +17,7 @@
 </template>
 
 <style scoped>
-  .cadastro {
-    margin-top: 10px;
-  }
-  .MainDiv {  
-    background-size: cover;
-    height: 716px;
-  }
-  .Content{
-    display: flex;
-    flex-direction: column;
-  }
   .login{
-    color: #FFF;
-  }
-  .cadastro {
     color: #FFF;
   }
 </style>
